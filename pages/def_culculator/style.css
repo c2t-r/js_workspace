@@ -16,15 +16,38 @@ body{
 
 .cp {
     color: #e89a9a;
-    padding: 30px 10px;
+    position: relative;
+    padding: 0px 0px 60px;
 }
 
 .cp input {
+    font: 15px/24px sans-serif;
     width: 100%;
-    padding: 8px 10px;
     border: none;
+    padding: 8px 10px;
     border-radius: 25px;
     background-color: #a8a8a8;
     font-size: 1em;
     line-height: 1.5;
+    text-align: center;
+}
+
+.percent::after {
+    color: #f27676;
+    content: "%";
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+}
+
+#exec {
+    padding: 10px 0px 10px;
+}
+
+#exec input {
+    border: none;
+    border-radius: 25px;
+    background-color: #e76060;
+    padding: 10px 15px;
 }

@@ -16,8 +16,11 @@
             </div>
 
             <label for="input3"></label>
-            <div class="cp"> Deffence Debuff (%)
-                <input id="input3" type="number" minlength="0" maxlength="1">
+            <div class="cp percent"> Deffence Debuff (%)
+                <input id="input3" type="number" minlength="0" maxlength="100" value="0">
+            </div>
+            <div id="exec">
+                <input type="button" value="Culculate!" onclick="cul();">
             </div>
         </div>
         <script src="script.js"></script>
