@@ -7,6 +7,18 @@ body{
     background-size:cover;
 }
 
+#twitter {
+    width: 60px;
+    height: 60px;
+    background-image: url(Twitter.ico);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
 .main {
     height: 100%;
     background: rgba(255, 255, 255, 0.4);
