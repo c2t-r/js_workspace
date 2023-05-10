@@ -1,3 +1,21 @@
+@media screen and (max-width: 499px) {
+    body{
+        background-image: url(bg_m.jpg);
+    }
+}
+  
+@media screen and (min-width: 500px) and (max-width: 999px) {
+    body{
+        background-image: url(bg_m.jpg);
+    }
+}
+  
+@media screen and (min-width:1000px) {
+    body{
+        background-image: url(bg.png);
+    }
+}
+
 body{
     margin: 0px;
     background: rgba(255, 255, 255, 0.4);
@@ -8,8 +26,8 @@ body{
 }
 
 #twitter {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-image: url(Twitter.ico);
     background-repeat:no-repeat;
     background-size:cover;
