@@ -36,7 +36,7 @@ body{
 }
 
 .percent::after {
-    color: #f27676;
+    color: #e89a9a;
     content: "%";
     display: inline-block;
     position: relative;
@@ -66,7 +66,7 @@ body{
 
 #result p {
     font: 15px/24px sans-serif;
-    color: rgb(0, 81, 255);
+    color: #ff9696;
 }
 
 #result p > a {
