@@ -6,7 +6,7 @@ function cul() {
     edef = ( 200 + ( elv * 10 )) * ((100 - debuff) / 100);
     defmul = 1 - ( edef / ( edef + 200 + ( 10 * plv)));
     
-    console.log(`Enemy Deffence : ${edef}`);
-    console.log(`Diffence Multiplier : ${defmul}`);
+    document.querySelector("#result > p#edef > a").textContent = edef;
+    document.querySelector("#result > p#defmul > a").textContent = defmul;
 }
     
