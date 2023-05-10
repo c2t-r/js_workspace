@@ -1,7 +1,43 @@
-body{
-    margin: 0px;
-    background: #acfff8;
-    height: 100%;
+@media screen and (max-width: 499px) {
+    body{
+        margin: 0px;
+        background-image: url(bg_m.png);
+        height: 100%;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+}
+  
+@media screen and (min-width: 500px) and (max-width: 999px) {
+    body{
+        margin: 0px;
+        background-image: url(bg_m.png);
+        height: 100%;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+}
+  
+@media screen and (min-width:1000px) {
+    body{
+        margin: 0px;
+        background-image: url(bg.png);
+        height: 100%;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+}
+
+#twitter {
+    width: 50px;
+    height: 50px;
+    background-image: url(Twitter.ico);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .main {
@@ -10,27 +46,63 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    flex-flow: column;
 }
 
-.caption {
-    text-align: center;
-    border: 1px rgba(0, 0, 0, 0);
-    font: italic 40px "Fira Sans", serif;
-}
-
-.bg {
-    background-image: url(https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Vasara_P.png);
-}
-
-.char {
-    height: 400px;
-    width: 166px;
-    border: 1px solid rgb(0, 0, 0);
+.cp {
+    color: #e89a9a;
     position: relative;
+    padding: 0px 0px 60px;
 }
 
-.credit {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+.cp input {
+    font: 15px/24px sans-serif;
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: #a8a8a8b8;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.percent::after {
+    color: #e89a9a;
+    content: "%";
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+}
+
+#exec {
+    padding: 0px 0px 10px;
+}
+
+#exec input {
+    color: #626060;
+    border: none;
+    border-radius: 25px;
+    background-color: #e76060;
+    padding: 10px 15px;
+}
+
+#exec input:active {
+    transform: translateY(2px);
+}
+
+#result {
+    padding-top: 30px;
+}
+
+#result p {
+    font: 15px/24px sans-serif;
+    color: #ff9696;
+}
+
+#result p > a {
+    font: 15px/24px sans-serif;
+    color: rgb(221, 255, 0);
 }
