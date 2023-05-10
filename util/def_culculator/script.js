@@ -8,7 +8,7 @@ function cul() {
     
     edef0 = ( 200 + ( elv * 10 ));
     defmul0 = 1 - ( edef0 / ( edef0 + 200 + ( 10 * plv)));
-    diff = defmul / defmul0;
+    diff = defmul / defmul0 * 100;
     
     document.querySelector("#result > p#edef > a").textContent = edef;
     document.querySelector("#result > p#defmul > a").textContent = defmul;
