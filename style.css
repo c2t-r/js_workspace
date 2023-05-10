@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    background: #acfff8;
+    height: 100%;
+    background-image: url(Rubilia_dps.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.main {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_block{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.parallelogram{
+    width: 10px;
+    height: 80px;
+    margin: 0;
+    display: inline-block;
+    background: rgba(166, 0, 152, 0.222);
+    transform: skewX(-35deg);
+    position: relative;
+    top: -100px;
+}
+
+.name_border{
+    border: 2px solid rgba(64, 220, 223, 0.6);
+    display:  inline-block;
+    padding: 5px 100px 5px 50px;
+    background-color: rgba(145, 231, 237, 0.5);
+}
+
+.name{
+    font: italic 40px "Fira Sans", serif;
+}
+
+.weapon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 30px;
+    left: -100px;
+}
+
+.status_icon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.status{
+    opacity: 0.8;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+}
+
+td, th {
+    width: 90px;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 8px 10px 8px;
+    text-align: center;
+}
+
+tr {
+    background-color: #eee;
+}
+
+th.col {
+    background-color: #696969;
+    color: #fff;
+}
+
+th.row {
+    background-color: #d7d9f2;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
