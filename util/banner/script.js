@@ -1,4 +1,4 @@
-const list = [1, 2, 3, 4, 5]; //今回のバナー
+const list = [1, 2, 3, 4, 5]; //Current banner
 
 const map = {
     1: ["Nilou", "-920px", "-140px"],
