@@ -121,3 +121,7 @@ header > div > img {
     font: 15px/24px sans-serif;
     color: rgb(221, 255, 0);
 }
+
+#per {
+    color: #ff9696;
+}
