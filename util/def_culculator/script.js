@@ -17,7 +17,9 @@ function cul() {
         document.querySelector("#result > p#diff").setAttribute("style", "visibility: hidden;")
     }
     
+    document.querySelector("#result > p#edef").setAttribute("style", "visibility: visible;")
     document.querySelector("#result > p#edef > a").textContent = edef;
+    document.querySelector("#result > p#defmul").setAttribute("style", "visibility: visible;")
     document.querySelector("#result > p#defmul > a").textContent = defmul;
 }
     
