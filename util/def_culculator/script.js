@@ -13,6 +13,8 @@ function cul() {
         diff = defmul / defmul0 * 100 - 100;
         document.querySelector("#result > p#diff").setAttribute("style", "visibility: visible;")
         document.querySelector("#result > p#diff > a").textContent = diff;
+    } else {
+        document.querySelector("#result > p#diff").setAttribute("style", "visibility: hidden;")
     }
     
     document.querySelector("#result > p#edef > a").textContent = edef;
