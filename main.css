@@ -1,3 +1,8 @@
+html, body { 
+    height: 100%;
+    overflow: hidden
+}
+
 body{
     margin: 0px;
     background: rgba(255, 255, 255, 0.4);
@@ -19,18 +24,18 @@ body{
 }
 
 #menu {
-    width: 40px;
-    height: 32px;
+    width: 2%;
+    aspect-ratio: 5 / 4;
     background-color: aqua;
     position: absolute;
-    right: 0px;
+    left: 0px;
     border: 0;
 }
 
-.toggle{
-    visibility: hidden;
-    width: 40px;
-    height: 32px;
+#toggle{
+    display: none;
+    width: 2%;
+    aspect-ratio: 5 / 4;
 }
 
 .bar {
@@ -43,8 +48,17 @@ body{
     background: #000;
 }
 
-#toggle:checked ~ .bar{
-    visibility: hidden;
+.right_menu {
+    height: 100%;
+    background: #3155c0;
+    position: absolute;
+    right: 0%;
+    display: none;
+}
+
+#toggle:checked ~ .right_menu{
+    display: block;
+    animation: menu_appear 1s;
 }
 
 .main {
@@ -55,4 +69,12 @@ body{
     align-items: center;
     margin: 0 auto;
     flex-flow: column;
+}
+
+@keyframes menu_appear {
+    0% {
+        transform: translateX(100%);
+    } 100% {
+        transform: translateX(0%);
+    }
 }

@@ -84,7 +84,7 @@ header > div > img {
     text-align: center;
 }
 
-.percent::after {
+.percen::after {
     color: #e89a9a;
     content: "%";
     display: inline-block;

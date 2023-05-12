@@ -36,6 +36,12 @@
             <label for="input3"></label>
             <div class="cp percent"> Deffence Debuff (%)
                 <input id="input3" type="number" minlength="0" maxlength="100" value="0">
+                <div class="tooltip1">
+                    <span>テキスト</span>
+                    <div class="description1">
+                        <p id="diff" style="visibility: hidden;">Percentage of increase : <a>invalid</a><a id="per">%</a></p>
+                    </div>
+                </div>
             </div>
             <div id="exec">
                 <input type="button" value="Culculate!" onclick="cul();">
