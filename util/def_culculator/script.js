@@ -18,7 +18,7 @@ function cul() {
         document.querySelector(".tooltip_area2").setAttribute("style", "visibility: hidden;")
     }
 
-    reduce = (0.5 / defmul0 * 100 - 100);
+    reduce = (0.5 / defmul0 * 100 - 100 + 50);
     document.querySelector(".tooltip_area").setAttribute("style", "visibility: visible;")
     document.querySelector("span#reduce > a").textContent = reduce;
     
