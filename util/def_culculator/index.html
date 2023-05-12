@@ -32,15 +32,25 @@
             <label for="input2"></label>
             <div class="cp"> Enemy Level
                 <input id="input2" type="number" minlength="1" maxlength="150" size="3" value="60">
+                <div class="tooltip_area" style="visibility: hidden;">
+                    <label class="tooltip" for="tooltip1">
+                        <input class="tt" id="tooltip1" type="checkbox">
+                        <span class="tooltip-text" id="reduce">Percentage of reduced damage : 
+                            <a></a>
+                            <a id="per">%</a>
+                            <p>* 0% : Enemy level = Character level</p>
+                        </span>
+                    </label>
+                </div>
             </div>
 
             <label for="input3"></label>
             <div class="cp percent"> Deffence Debuff (%)
                 <input id="input3" type="number" minlength="0" maxlength="100" value="0">
-                <div class="tooltip_area" style="visibility: hidden;">
-                    <label class="tooltip" for="tooltip1">
-                        <input class="tt" id="tooltip1" type="checkbox">
-                        <span class="tooltip-text" id="diff">Percentage of increase : <a>invalid</a><a id="per">%</a></span>
+                <div class="tooltip_area2" style="visibility: hidden;">
+                    <label class="tooltip" for="tooltip2">
+                        <input class="tt" id="tooltip2" type="checkbox">
+                        <span class="tooltip-text" id="diff">Percentage of increase : <a></a><a id="per">%</a></span>
                     </label>
                 </div>
             </div>

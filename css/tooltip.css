@@ -8,6 +8,12 @@
     cursor: pointer; /* カーソルを当てたときにポインターに */
 }
 
+.tooltip:nth-child(1)::before {
+    content: "!";
+    position: relative;
+    right: -50%;
+}
+
 input.tt {
     display: none;
 }
@@ -18,7 +24,7 @@ input.tt {
     position: absolute; /* 絶対配置 */
     left: 50%; /* 親に対して中央配置 */
     transform: translateX(-50%); /* 親に対して中央配置 */
-    bottom: -30px; /* 親要素下からの位置 */
+    bottom: 30px; /* 親要素下からの位置 */
     display: inline-block;
     padding: 5px; /* 余白 */
     white-space: nowrap; /* テキストを折り返さない */
