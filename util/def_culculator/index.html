@@ -15,6 +15,7 @@
         <meta name="twitter:image" content="https://github.com/c2t-r/js_workspace/blob/main/util/def_culculator/thumbnail.png?raw=true">
         <meta name="twitter:image:alt" content="HSR Deffence Multiplier Culculator">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../css/tooltip.css">
     </head>
     <body>
         <div class="main">
@@ -36,11 +37,11 @@
             <label for="input3"></label>
             <div class="cp percent"> Deffence Debuff (%)
                 <input id="input3" type="number" minlength="0" maxlength="100" value="0">
-                <div class="tooltip1">
-                    <span>テキスト</span>
-                    <div class="description1">
-                        <p id="diff" style="visibility: hidden;">Percentage of increase : <a>invalid</a><a id="per">%</a></p>
-                    </div>
+                <div class="tooltip_area" style="visibility: hidden;">
+                    <label class="tooltip" for="tooltip1">
+                        <input class="tt" id="tooltip1" type="checkbox">
+                        <span class="tooltip-text" id="diff">Percentage of increase : <a>invalid</a><a id="per">%</a></span>
+                    </label>
                 </div>
             </div>
             <div id="exec">

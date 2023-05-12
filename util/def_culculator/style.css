@@ -126,3 +126,8 @@ header > div > img {
 #per {
     color: #ff9696;
 }
+
+.tooltip {
+    bottom: 35px;
+    right: -420px;
+}

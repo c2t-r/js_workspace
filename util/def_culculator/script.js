@@ -11,10 +11,11 @@ function cul() {
         edef0 = ( 200 + ( elv * 10 ));
         defmul0 = 1 - ( edef0 / ( edef0 + 200 + ( 10 * plv)));
         diff = defmul / defmul0 * 100 - 100;
-        document.querySelector("p#diff").setAttribute("style", "visibility: visible;")
-        document.querySelector("p#diff > a").textContent = diff;
+        document.querySelector(".tooltip_area").setAttribute("style", "visibility: visible;")
+        document.querySelector("span#diff > a").textContent = diff;
     } else {
-        document.querySelector("p#diff").setAttribute("style", "visibility: hidden;")
+        document.querySelector("#tooltip1").checked = false;
+        document.querySelector(".tooltip_area").setAttribute("style", "visibility: hidden;")
     }
     
     document.querySelector("#result > p#edef").setAttribute("style", "visibility: visible;")
