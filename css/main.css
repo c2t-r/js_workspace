@@ -3,18 +3,10 @@ html, body {
     overflow: hidden
 }
 
-body{
-    margin: 0px;
-    background: rgba(255, 255, 255, 0.4);
-    height: 100%;
-    background-repeat:no-repeat;
-    background-size:cover;
-}
-
 #twitter {
     width: 50px;
     height: 50px;
-    background-image: url(Twitter.ico);
+    background-image: url(../Twitter.png);
     background-repeat:no-repeat;
     background-size:cover;
     border-radius: 50%;
@@ -59,16 +51,6 @@ body{
 #toggle:checked ~ .right_menu{
     display: block;
     animation: menu_appear 1s;
-}
-
-.main {
-    height: 100%;
-    background: rgba(255, 255, 255, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    flex-flow: column;
 }
 
 @keyframes menu_appear {
