@@ -18,13 +18,13 @@ body{
     font: italic 40px "Fira Sans", serif;
 }
 
-.bg {
-    background-image: url(https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kirara_P.png);
+.status {
+    border-collapse: collapse
 }
 
 .char {
     height: 400px;
-    width: 166px;
+    width: 162px;
     border: 1px solid rgb(0, 0, 0);
     position: relative;
 }
