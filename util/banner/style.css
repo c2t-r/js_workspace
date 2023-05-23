@@ -18,6 +18,10 @@ body{
     font: italic 40px "Fira Sans", serif;
 }
 
+.bg {
+    background-image: url("https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P.png");
+}
+
 .status {
     border-collapse: collapse
 }
