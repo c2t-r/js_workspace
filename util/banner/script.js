@@ -6,8 +6,8 @@ const bgimage = "https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P
 
 
 window.onload = function() {
-    bg = document.querySelector(".bg");
-    bg.style.backgroundImage = `url(${bgimage})`;
+    //bg = document.querySelector(".bg");
+    //bg.style.backgroundImage = `url(${bgimage})`;
 
     for (let n = 1; n < 6; n++) {
         const ch = document.querySelector(`.c${n}`);
