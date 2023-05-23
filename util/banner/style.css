@@ -6,10 +6,10 @@ body{
 
 .main {
     height: 100%;
-    background: rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
 
 .caption {
@@ -22,8 +22,13 @@ body{
     background-image: url("https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P.png");
 }
 
-.status {
-    border-collapse: collapse
+.banner {
+    border-collapse: collapse;
+    background: #acfff8;
+}
+
+#dlbutton {
+    padding: 100px 60px;
 }
 
 .char {

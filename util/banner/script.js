@@ -10,3 +10,13 @@ window.onload = function() {
         ch.style.backgroundPosition = `${mapping[list[n-1]][1]} ${mapping[list[n-1]][2]}`;
     }
 }
+
+function tocanvas() {
+    html2canvas(document.querySelector(".banner"), {proxy: true, useCORS: true, onrendered: function(canvas) { canvas.toDataURL();} }).then(canvas => {
+        let location = document.querySelector(".main");
+        location.appendChild(canvas)
+    });
+}
+
+let button = document.querySelector("#dlbutton");
+button.addEventListener('click', tocanvas);
