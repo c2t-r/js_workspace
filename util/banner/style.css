@@ -7,14 +7,15 @@ body{
 .main {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: normal;
     align-items: center;
     flex-flow: column;
+    padding: 100px 60px;
 }
 
 .caption {
     text-align: center;
-    border: 1px rgba(0, 0, 0, 0);
+    border: 1px rgba(0, 0, 0);
     font: italic 40px "Fira Sans", serif;
 }
 
@@ -27,8 +28,24 @@ body{
     background: #acfff8;
 }
 
+.spacer {
+    padding: 20px;
+}
+
+#Generator {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: azure;
+}
+
 #dlbutton {
-    padding: 100px 60px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: azure;
 }
 
 .char {

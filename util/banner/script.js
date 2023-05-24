@@ -14,9 +14,18 @@ window.onload = function() {
 function tocanvas() {
     html2canvas(document.querySelector(".banner"), {proxy: true, useCORS: true, onrendered: function(canvas) { canvas.toDataURL();} }).then(canvas => {
         let location = document.querySelector(".main");
-        location.appendChild(canvas)
+        location.appendChild(canvas);
+        document.querySelector("#dlbutton").setAttribute("style", "visibility: visible;")
     });
 }
 
-let button = document.querySelector("#dlbutton");
-button.addEventListener('click', tocanvas);
+function download_canvas() {
+    let canvas = document.querySelector("canvas");
+    let link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "banner.png";
+    link.click();
+}
+
+document.querySelector("#Generator").addEventListener('click', tocanvas);
+document.querySelector("#dlbutton").addEventListener('click', download_canvas);

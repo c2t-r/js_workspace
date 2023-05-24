@@ -11,20 +11,20 @@ function cul() {
     diff = defmul / defmul0 * 100 - 100;
     
     if (debuff != 0) {
-        document.querySelector(".tooltip_area2").setAttribute("style", "visibility: visible;")
+        document.querySelector(".tooltip_area2").setAttribute("style", "visibility: visible;");
         document.querySelector("span#diff > a").textContent = diff;
     } else {
         document.querySelector("#tooltip2").checked = false;
-        document.querySelector(".tooltip_area2").setAttribute("style", "visibility: hidden;")
+        document.querySelector(".tooltip_area2").setAttribute("style", "visibility: hidden;");
     }
 
     reduce = (0.5 / defmul0 * 100 - 100 + 50);
-    document.querySelector(".tooltip_area").setAttribute("style", "visibility: visible;")
+    document.querySelector(".tooltip_area").setAttribute("style", "visibility: visible;");
     document.querySelector("span#reduce > a").textContent = reduce;
     
-    document.querySelector("#result > p#edef").setAttribute("style", "visibility: visible;")
+    document.querySelector("#result > p#edef").setAttribute("style", "visibility: visible;");
     document.querySelector("#result > p#edef > a").textContent = edef;
-    document.querySelector("#result > p#defmul").setAttribute("style", "visibility: visible;")
+    document.querySelector("#result > p#defmul").setAttribute("style", "visibility: visible;");
     document.querySelector("#result > p#defmul > a").textContent = defmul;
 }
     
