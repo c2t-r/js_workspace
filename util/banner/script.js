@@ -41,7 +41,7 @@ function tocanvas() {
         location.appendChild(canvas);
         var ctx = canvas.getContext('2d');
         ctx.font = '24px serif';
-        ctx.fillText('c2t-r.github.io/js_workspace/util/banner/', 545, 590);
+        ctx.fillText('c2t-r.github.io/js_workspace', 545, 590);
         document.querySelector("#dlbutton").setAttribute("style", "visibility: visible;");
     });
 }
