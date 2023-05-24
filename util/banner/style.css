@@ -23,9 +23,14 @@ body{
     background-image: url("https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P.png");
 }
 
+.banner_wrap {
+    padding: 0px 40px 40px 40px;
+    background: #acfff8;
+}
+
 .banner {
     border-collapse: collapse;
-    background: #acfff8;
+    padding: 20px;
 }
 
 .spacer {

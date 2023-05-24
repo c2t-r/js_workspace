@@ -12,7 +12,11 @@ window.onload = function() {
 }
 
 function tocanvas() {
-    html2canvas(document.querySelector(".banner"), {proxy: true, useCORS: true, onrendered: function(canvas) { canvas.toDataURL();} }).then(canvas => {
+    let canvas = document.querySelector("canvas");
+    if (canvas !== null) {
+        canvas.remove();
+    }
+    html2canvas(document.querySelector(".banner_wrap"), {proxy: true, useCORS: true, onrendered: function(canvas) { canvas.toDataURL();} }).then(canvas => {
         let location = document.querySelector(".main");
         location.appendChild(canvas);
         document.querySelector("#dlbutton").setAttribute("style", "visibility: visible;")
