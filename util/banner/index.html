@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="main">
-            <div class="banner_wrap credit">
+            <div class="table_wrap credit">
                 <table class="banner">
                     <tr>
                         <td colspan="5" class="caption" contentEditable="true">v3.8 second half</td>
@@ -19,29 +19,41 @@
                     </tr>
                 </table>
             </div>
-            <div class="banner_wrap">
+            <div class="table_wrap">
                 <table class="banner">
                     <tr class="search">
                         <th class="search_wrap">
-                            <select list="characters" class="search_box s1"></select>
+                            <select list="characters" class="search_box s1"><option hidden>キャラを選択</option></select>
                         </th>
                         <th class="search_wrap">
-                            <select list="characters" class="search_box s2"></select>
+                            <select list="characters" class="search_box s2"><option hidden>キャラを選択</option></select>
                         </th>
                         <th class="search_wrap">
-                            <select list="characters" class="search_box s3"></select>
+                            <select list="characters" class="search_box s3"><option hidden>キャラを選択</option></select>
                         </th>
                         <th class="search_wrap">
-                            <select list="characters" class="search_box s4"></select>
+                            <select list="characters" class="search_box s4"><option hidden>キャラを選択</option></select>
                         </th>
                         <th class="search_wrap">
-                            <select list="characters" class="search_box s5"></select>
+                            <select list="characters" class="search_box s5"><option hidden>キャラを選択</option></select>
                         </th>
                     </tr>
                     <tr class="search">
                         <td colspan="5" class="namecard">
-                            <span>背景壁紙</span>
-                            <select list="characters" class="search_box s6"></select>
+                            <span>背景名刺</span>
+                            <select list="characters" class="search_box s6"><option hidden>キャラ名刺を選択</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="bgcolor">
+                            <span>背景色</span>
+                            <input type="color" id="bgcolor" value="#acfff8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="creditText">
+                            <span>クレジット</span>
+                            <input type="text" id="creditText" value="c2t-r.github.io/js_workspace">
                         </td>
                     </tr>
                 </table>

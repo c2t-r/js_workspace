@@ -23,7 +23,7 @@ body{
     background-image: url("https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P.png");
 }
 
-.banner_wrap {
+.table_wrap {
     padding: 0px 40px 40px 40px;
     background: #acfff8;
 }
@@ -69,12 +69,41 @@ body{
     display: inline-block;
     align-items: center;
     width: 150px;
+    background-color: azure;
     border-radius: 7px;
-    border-color: black;
+    border-color: rgb(1, 125, 178);
     border-style: solid;
+    border-width: 2px;
 }
 
 td.namecard {
     padding: 20px;
     text-align: center;
+}
+
+td.bgcolor {
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+#bgColor {
+    border-radius: 7px;
+    border-color: rgb(1, 125, 178);
+    border-style: solid;
+    border-width: 2px;
+}
+
+td.creditText {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+#creditText {
+    width: 200px;
+    padding: 5px 15px;
+    background-color: azure;
+    border-radius: 7px;
+    border-color: rgb(1, 125, 178);
+    border-style: solid;
+    border-width: 2px;
 }
