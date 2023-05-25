@@ -73,3 +73,8 @@ body{
     border-color: black;
     border-style: solid;
 }
+
+td.namecard {
+    padding: 20px;
+    text-align: center;
+}
