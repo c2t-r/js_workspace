@@ -43,7 +43,8 @@ function tocanvas() {
         let location = document.querySelector(".main");
         location.appendChild(canvas);
         var ctx = canvas.getContext('2d');
-        ctx.font = '24px serif';
+        ctx.font = "24px serif";
+        ctx.fillStyle = "#8dd5ff";
         ctx.fillText('c2t-r.github.io/js_workspace', 545, 590);
         document.querySelector("#dlbutton").setAttribute("style", "visibility: visible;");
     });
