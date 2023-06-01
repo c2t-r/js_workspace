@@ -20,7 +20,10 @@ body{
 }
 
 .bg {
-    background-image: url("https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P.png");
+    background-image: url("https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Background/ImgAbyssAlternationBg.png");
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .table_wrap {
