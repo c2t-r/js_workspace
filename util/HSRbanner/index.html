@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>HSR Banner Generator</title>
+        <meta name="author" content="c2tr">
+        <meta name="theme-color" content="#acfff8" data-react-helmet="true">
+        <meta property="og:title" content="HSR Banner Generator">
+        <meta property="og:description" content="HSR Banner Generator">
+        <meta property="og:image" content="https://github.com/c2t-r/js_workspace/blob/main/util/HSRbanner/thumbnail.png?raw=true">
+        <meta property="og:image:type" content="image/png">
+        <!--twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="HSR Banner Generator">
+        <meta name="twitter:description" content="HSR Banner Generator">
+        <meta name="twitter:image" content="https://github.com/c2t-r/js_workspace/blob/main/util/HSRbanner/thumbnail.png?raw=true">
+        <meta name="twitter:image:alt" content="HSR Banner Generator">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="table_wrap credit">
+                <table class="banner">
+                    <tr>
+                        <td colspan="5" class="caption" contentEditable="true">HSR Banner Generator</td>
+                    </tr>
+                    <tr class="bg">
+                        <th class="char c1"></th>
+                        <th class="char c2"></th>
+                        <th class="char c3"></th>
+                        <th class="char c4"></th>
+                        <th class="char c5"></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="table_wrap">
+                <table class="banner">
+                    <tr class="search">
+                        <th class="search_wrap">
+                            <select list="characters" class="search_box s1"><option hidden>キャラを選択</option></select>
+                        </th>
+                        <th class="search_wrap">
+                            <select list="characters" class="search_box s2"><option hidden>キャラを選択</option></select>
+                        </th>
+                        <th class="search_wrap">
+                            <select list="characters" class="search_box s3"><option hidden>キャラを選択</option></select>
+                        </th>
+                        <th class="search_wrap">
+                            <select list="characters" class="search_box s4"><option hidden>キャラを選択</option></select>
+                        </th>
+                        <th class="search_wrap">
+                            <select list="characters" class="search_box s5"><option hidden>キャラを選択</option></select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="bgcolor">
+                            <span>背景色</span>
+                            <input type="color" id="bgcolor" value="#acfff8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="creditText">
+                            <span>クレジット</span>
+                            <input type="text" id="creditText" value="c2t-r.github.io/js_workspace">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <datalist id="characters">
+            </datalist>
+            <div class="spacer">
+                <span id="Generator">Generate Image</span>
+            </div>
+            <div class="spacer">
+                <span id="dlbutton" style="display: none;">Download</span>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+        <script src="https://github.com/niklasvh/html2canvas/releases/download/v1.4.1/html2canvas.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+    background: #acfff8;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-flow: column;
+    padding: 100px 60px;
+}
+
+.caption {
+    text-align: center;
+    border: 1px rgba(0, 0, 0);
+    font: italic 40px "Fira Sans", serif;
+}
+
+.bg {
+    background-image: url("https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Kokomi_P.png");
+}
+
+.table_wrap {
+    padding: 0px 40px 40px 40px;
+    background: #acfff8;
+}
+
+.banner {
+    border-collapse: collapse;
+    padding: 20px;
+    width: 826px;
+}
+
+.spacer {
+    padding: 20px;
+}
+
+#Generator {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: azure;
+}
+
+#dlbutton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: azure;
+}
+
+.char {
+    height: 400px;
+    width: 162px;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+}
+
+.search_wrap {
+    width: 162px;
+}
+
+.search_box {
+    display: inline-block;
+    align-items: center;
+    width: 150px;
+    background-color: azure;
+    border-radius: 7px;
+    border-color: rgb(1, 125, 178);
+    border-style: solid;
+    border-width: 2px;
+}
+
+td.namecard {
+    padding: 20px;
+    text-align: center;
+}
+
+td.bgcolor {
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+#bgColor {
+    border-radius: 7px;
+    border-color: rgb(1, 125, 178);
+    border-style: solid;
+    border-width: 2px;
+}
+
+td.creditText {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+#creditText {
+    width: 200px;
+    padding: 5px 15px;
+    background-color: azure;
+    border-radius: 7px;
+    border-color: rgb(1, 125, 178);
+    border-style: solid;
+    border-width: 2px;
+}
