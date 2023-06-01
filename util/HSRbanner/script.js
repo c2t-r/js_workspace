@@ -4,12 +4,19 @@ const list = ["リンクス", "Guinaifen", "リンクス", "Guinaifen", "リン�
 
 let creditText = 'c2t-r.github.io/js_workspace';
 
+function setBanner(th, name) {
+    if (mapping["character"][name][3]) {
+        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Character/avatarcutinfigures/${mapping["character"][name][0]}.png`;
+    } else {
+        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Character/SplashImage/${mapping["character"][name][0]}.png`;
+    }
+        th.style.backgroundPosition = `${mapping["character"][name][1]} ${mapping["character"][name][2]}`;
+}
+
 window.onload = function() {
     for (let n = 1; n < 6; n++) {
         const ch = document.querySelector(`.c${n}`);
-
-        ch.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Character/SplashImage/${mapping["character"][list[n-1]][0]}.png`;
-        ch.style.backgroundPosition = `${mapping["character"][list[n-1]][1]} ${mapping["character"][list[n-1]][2]}`;
+        setBanner(ch, list[n-1]);
     }
     for (let n = 0; n < 5; n++) {
         let select = document.querySelectorAll(`.search_box`)[n];
@@ -26,8 +33,7 @@ window.onload = function() {
 function changeCharacter() {
     let ch = document.querySelector(`.c${this.name + 1}`);
     let c_name = document.querySelectorAll(`.search_box`)[this.name].value;
-    ch.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Character/SplashImage/${mapping["character"][c_name][0]}.png`;
-    ch.style.backgroundPosition = `${mapping["character"][c_name][1]} ${mapping["character"][c_name][2]}`;
+    setBanner(ch, c_name);
 }
 
 function changeBgColor() {
