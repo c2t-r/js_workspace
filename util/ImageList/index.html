@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>HSR Banner Generator</title>
+        <meta name="author" content="c2tr">
+        <meta name="theme-color" content="#acfff8" data-react-helmet="true">
+        <meta property="og:title" content="HSR Banner Generator">
+        <meta property="og:description" content="HSR Banner Generator">
+        <meta property="og:image" content="https://github.com/c2t-r/js_workspace/blob/main/util/HSRbanner/thumbnail.png?raw=true">
+        <meta property="og:image:type" content="image/png">
+        <!--twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="HSR Banner Generator">
+        <meta name="twitter:description" content="HSR Banner Generator">
+        <meta name="twitter:image" content="https://github.com/c2t-r/js_workspace/blob/main/util/HSRbanner/thumbnail.png?raw=true">
+        <meta name="twitter:image:alt" content="HSR Banner Generator">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="spacer">表示する画像の親フォルダ</div>
+            <label for="dirPick">
+                <div class="spacer input_wrap">
+                    Open
+                    <input type="file" class="dirPick" id="dirPick" webkitdirectory directory>
+                </div>
+            </label>
+            <div class="spacer">横並びする画像の枚数</div>
+            <div class="spacer"><input class="setLimit" type="number" value="6"></div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
