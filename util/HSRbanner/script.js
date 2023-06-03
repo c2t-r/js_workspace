@@ -1,6 +1,6 @@
 import mapping from './mapping.json' assert {type: 'json'};
 
-const list = ["リンクス", "Guinaifen", "リンクス", "Guinaifen", "リンクス"];
+const list = ["セーバル", "ジェパード", "開拓者(女)壊滅", "ジェパード", "セーバル"];
 
 let creditText = 'c2t-r.github.io/js_workspace';
 
