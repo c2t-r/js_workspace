@@ -2,11 +2,12 @@ const url = new URL(window.location.href);
 const params = url.searchParams;
 const limit = params.get('limit');
 const user = params.get('user');
+const repo = params.get('repo');
 const dir = params.get('dir');
 const input = document.querySelector(".setLimit");
 
 window.onload = async function() {
-    const apiUrl = `https://api.github.com/repos/${user}/HSR-Asset/contents/${dir}`;
+    const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${dir}`;
     const responce = await (await fetch(apiUrl)).json();
 
     if (document.querySelector(".imgs") !== null){
