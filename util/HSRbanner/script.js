@@ -6,9 +6,9 @@ let creditText = 'c2t-r.github.io/js_workspace';
 
 function setBanner(th, name) {
     if (mapping["character"][name][3]) {
-        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Character/avatarcutinfigures/${mapping["character"][name][0]}.png`;
+        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Image/Character/avatarcutinfigures/${mapping["character"][name][0]}.png`;
     } else {
-        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Texture2D/Character/SplashImage/${mapping["character"][name][0]}.png`;
+        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Image/Character/SplashImage/${mapping["character"][name][0]}.png`;
     }
         th.style.backgroundPosition = `${mapping["character"][name][1]} ${mapping["character"][name][2]}`;
 }
