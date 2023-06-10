@@ -33,3 +33,14 @@ body{
 input[type="file"] {
     opacity: 0.8;
 }
+
+.textWrap {
+    position: relative;
+    display: inline-block;
+}
+
+.folderName {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
