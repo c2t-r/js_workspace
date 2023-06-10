@@ -1,9 +1,7 @@
 const url = new URL(window.location.href);
 const params = url.searchParams;
 const limit = params.get('limit');
-const user = params.get('user');
-const repo = params.get('repo');
-const dir = params.get('dir');
+const param = params.get('api');
 
 const allow_exts = new Array('.jpg', '.jpeg', '.png');
 
@@ -14,7 +12,8 @@ window.onload = async function() {
         document.querySelector(".imgs").remove()
     }
 
-    const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${dir}`;
+    const apiUrl = `https://api.github.com/repos/${param}`;
+    console.log(apiUrl);
     const option = {
         method: "GET"
     };
@@ -30,7 +29,8 @@ window.onload = async function() {
     imgs.classList.add("imgs");
 
     for (const entry of json) {
-        if (entry["download_url"] == null){
+        if (entry["type"] == "dir"){
+            createFolder(entry["url"], imgs);
             continue;
         }
         if (!checkExt(entry["name"])) {
@@ -47,6 +47,21 @@ window.onload = async function() {
     document.querySelector(".main").appendChild(imgs);
     setLimit(limit);
     input.value = limit;
+}
+
+function createFolder(url, parent) {
+    const a = document.createElement("a");
+    const folder = document.createElement("img");
+    const parsedUrl = "https://c2t-r.github.io/js_workspace/util/imageList/?limit=6&api=" + url.split("repos/")[1];
+    a.classList.add("img");
+
+    a.href = `${parsedUrl}`;
+    folder.src = "default.png";
+
+    console.log(a);
+
+    a.appendChild(folder);
+    parent.appendChild(a);
 }
 
 function checkExt(filename) {
