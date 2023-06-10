@@ -50,19 +50,27 @@ window.onload = async function() {
 }
 
 function createFolder(url, name, parent) {
+    const wrap = document.createElement("div");
     const a = document.createElement("a");
+    const div = document.createElement("div");
     const folder = document.createElement("img");
     const parsedUrl = "https://c2t-r.github.io/js_workspace/util/imageList/?limit=6&api=" + url.split("repos/")[1];
-    a.classList.add("img");
-    a.innerText = name;
 
+    wrap.classList.add("textWrap");
+    wrap.classList.add("img");
+    
     a.href = `${parsedUrl}`;
+
+    div.innerText = name;
+    div.classList.add("folderName");
+
     folder.src = "default.png";
 
-    console.log(a);
-
     a.appendChild(folder);
-    parent.appendChild(a);
+    a.appendChild(div);
+    wrap.appendChild(a);
+    parent.appendChild(wrap);
+    console.log(wrap);
 }
 
 function checkExt(filename) {
