@@ -30,7 +30,7 @@ window.onload = async function() {
 
     for (const entry of json) {
         if (entry["type"] == "dir"){
-            createFolder(entry["url"], imgs);
+            createFolder(entry["url"], entry["name"], imgs);
             continue;
         }
         if (!checkExt(entry["name"])) {
@@ -49,11 +49,12 @@ window.onload = async function() {
     input.value = limit;
 }
 
-function createFolder(url, parent) {
+function createFolder(url, name, parent) {
     const a = document.createElement("a");
     const folder = document.createElement("img");
     const parsedUrl = "https://c2t-r.github.io/js_workspace/util/imageList/?limit=6&api=" + url.split("repos/")[1];
     a.classList.add("img");
+    a.innerText = name;
 
     a.href = `${parsedUrl}`;
     folder.src = "default.png";
