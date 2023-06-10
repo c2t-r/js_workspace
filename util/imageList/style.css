@@ -44,3 +44,7 @@ input[type="file"] {
     top: 40%;
     left: 20%;
 }
+
+.folder {
+    width: 100%;
+}

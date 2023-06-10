@@ -64,6 +64,7 @@ function createFolder(url, name, parent) {
     div.innerText = name;
     div.classList.add("folderName");
 
+    folder.classList.add("folder");
     folder.src = "default.png";
 
     a.appendChild(folder);
