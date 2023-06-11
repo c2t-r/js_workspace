@@ -70,7 +70,8 @@ function createFolder(url, name, parent) {
     a.appendChild(folder);
     a.appendChild(div);
     wrap.appendChild(a);
-    parent.appendChild(wrap);
+
+    parent.insertBefore(wrap, parent.firstChild);
     console.log(wrap);
 }
 
