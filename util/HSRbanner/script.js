@@ -6,19 +6,19 @@ let creditText = 'c2t-r.github.io/js_workspace';
 
 function setBanner(th, name) {
     if (mapping["character"][name][3]) {
-        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Image/Character/avatarcutinfigures/${mapping["character"][name][0]}.png`;
+        th.style.backgroundImage = `url(https://api.yatta.top/hsr/assets/UI/avatar/large/${mapping["character"][name][0]}.sm.png`;
     } else {
-        th.style.backgroundImage = `url(https://raw.githubusercontent.com/c2t-r/HSR-Asset/main/Image/Character/SplashImage/${mapping["character"][name][0]}.png`;
+        th.style.backgroundImage = `url(https://api.yatta.top/hsr/assets/UI/avatar/large/${mapping["character"][name][0]}.sm.png`;
     }
         th.style.backgroundPosition = `${mapping["character"][name][1]} ${mapping["character"][name][2]}`;
 }
 
 window.onload = function() {
-    for (let n = 1; n < 6; n++) {
+    for (let n = 1; n < 5; n++) {
         const ch = document.querySelector(`.c${n}`);
         setBanner(ch, list[n-1]);
     }
-    for (let n = 0; n < 5; n++) {
+    for (let n = 0; n < 4; n++) {
         let select = document.querySelectorAll(`.search_box`)[n];
         for (const entry of Object.entries(mapping["character"])) {
             const option = document.createElement("option");
@@ -80,7 +80,6 @@ document.querySelectorAll(".search_box")[0].addEventListener('change', {name: ch
 document.querySelectorAll(".search_box")[1].addEventListener('change', {name: change2, handleEvent: changeCharacter});
 document.querySelectorAll(".search_box")[2].addEventListener('change', {name: change3, handleEvent: changeCharacter});
 document.querySelectorAll(".search_box")[3].addEventListener('change', {name: change4, handleEvent: changeCharacter});
-document.querySelectorAll(".search_box")[4].addEventListener('change', {name: change5, handleEvent: changeCharacter});
 document.querySelector("#bgcolor").addEventListener('input', changeBgColor);
 document.querySelector("#creditText").addEventListener('input', changeCreditText);
 document.querySelector("#Generator").addEventListener('click', tocanvas);
