@@ -17,6 +17,10 @@ body{
     padding: 5px;
 }
 
+.spacer2 {
+    padding: 20px;
+}
+
 .input_wrap {
     padding: 10px 20px;
     border-radius: 30px;
