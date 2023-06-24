@@ -50,3 +50,23 @@ body{
 input[type="file"] {
     opacity: 0.8;
 }
+
+.spacer {
+    padding: 20px;
+}
+
+#Generator {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: azure;
+}
+
+#dlbutton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: azure;
+}

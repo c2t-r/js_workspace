@@ -33,5 +33,27 @@ function setLimit() {
     }
 }
 
+function tocanvas() {
+    let canvas = document.querySelector("canvas");
+    if (canvas !== null) {
+        canvas.remove();
+    }
+    html2canvas(document.querySelector(".imgs"), {proxy: false, useCORS: true, onrendered: function(canvas) { canvas.toDataURL();} }).then(canvas => {
+        let location = document.querySelector(".main");
+        location.appendChild(canvas);
+        document.querySelector("#dlbutton").setAttribute("style", "visibility: visible;");
+    });
+}
+
+function download_canvas() {
+    let canvas = document.querySelector("canvas");
+    let link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "list.png";
+    link.click();
+}
+
 dir.addEventListener('change', appendImg);
 limit.addEventListener('change', setLimit);
+document.querySelector("#Generator").addEventListener('click', tocanvas);
+document.querySelector("#dlbutton").addEventListener('click', download_canvas);
