@@ -20,7 +20,7 @@
                 <label for="dirPick">
                     <div class="char">
                         Open Folder
-                        <input type="file" class="dirPick" id="dirPick" webkitdirectory directory>
+                        <input type="file" id="dirPick" style="display: none;" webkitdirectory directory>
                     </div>
                 </label>
             </div>
@@ -34,6 +34,9 @@
             </div>
             <div class="spacer">
                 <div class="char" id="dlbutton" style="display: none;">Download</div>
+            </div>
+            <div class="spacer">
+                <div class="canvas" style="visibility: hidden;"></div>
             </div>
         </div>
         <script type="module" src="script.js"></script>

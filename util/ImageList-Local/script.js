@@ -1,4 +1,4 @@
-const dir = document.querySelector(".dirPick");
+const dir = document.querySelector("#dirPick");
 const limit = document.querySelector(".setLimit");
 
 function appendImg() {
@@ -39,9 +39,10 @@ function tocanvas() {
         canvas.remove();
     }
     html2canvas(document.querySelector(".imgs"), {proxy: false, useCORS: true, onrendered: function(canvas) { canvas.toDataURL();} }).then(canvas => {
-        let location = document.querySelector(".main");
+        let location = document.querySelector(".canvas");
         location.appendChild(canvas);
         document.querySelector("#dlbutton").setAttribute("style", "visibility: visible;");
+        document.querySelector(".canvas").setAttribute("style", "visibility: visible;");
     });
 }
 

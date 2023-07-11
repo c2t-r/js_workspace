@@ -26,10 +26,6 @@ body{
     text-align: center;
 }
 
-.dirPick {
-    display: none;
-}
-
 .setLimit {
     padding: 10px 20px;
     border-radius: 20px;
@@ -39,18 +35,27 @@ body{
     text-align: center;
 }
 
-.img {
-    width: 16.6667%;
-}
-
-input[type="file"] {
-    opacity: 0.8;
-}
-
 .char {
     padding: 10px 20px;
     border-radius: 30px;
     border-color: aquamarine;
     border-style: solid;
     background-color: azure;
+}
+
+.img {
+    width: 16.6667%;
+}
+
+.canvas {
+    padding: 15px;
+    border-radius: 40px;
+    border-color: rgb(65, 231, 129);
+    border-style: solid;
+    border-width: 10px;
+    background-color: rgb(147, 255, 189);
+}
+
+canvas {
+    padding: 10px;
 }
