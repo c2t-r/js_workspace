@@ -31,4 +31,5 @@ window.onload = async function() {
         index.appendChild(li);
     }
     document.querySelector(".main").appendChild(index);
+    document.querySelector(".right_menu").appendChild(index);
 }
