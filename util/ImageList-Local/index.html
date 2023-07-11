@@ -16,20 +16,24 @@
     <body>
         <div class="main">
             <div class="spacer">Set the images</div>
-            <label for="dirPick">
-                <div class="spacer input_wrap">
-                    Open Folder
-                    <input type="file" class="dirPick" id="dirPick" webkitdirectory directory>
-                </div>
-            </label>
-            <div class="spacer">Number of images to line up horizontally</div>
-            <div class="spacer"><input class="setLimit" type="number" value="6"></div>
-            <div class="spacer">Generate Image</div>
-            <div class="spacer2">
-                <span id="Generator">Generate</span>
+            <div class="spacer">
+                <label for="dirPick">
+                    <div class="char">
+                        Open Folder
+                        <input type="file" class="dirPick" id="dirPick" webkitdirectory directory>
+                    </div>
+                </label>
             </div>
-            <div class="spacer2">
-                <span id="dlbutton" style="display: none;">Download</span>
+            <div class="spacer">Number of images to line up horizontally</div>
+            <div class="spacer">
+                <input class="setLimit" type="number" value="6">
+            </div>
+            <div class="spacer">Generate Image</div>
+            <div class="spacer">
+                <div class="char" id="Generator">Generate</div>
+            </div>
+            <div class="spacer">
+                <div class="char" id="dlbutton" style="display: none;">Download</div>
             </div>
         </div>
         <script type="module" src="script.js"></script>

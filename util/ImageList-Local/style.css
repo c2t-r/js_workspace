@@ -17,10 +17,6 @@ body{
     padding: 5px;
 }
 
-.spacer2 {
-    padding: 20px;
-}
-
 .input_wrap {
     padding: 10px 20px;
     border-radius: 30px;
@@ -51,17 +47,9 @@ input[type="file"] {
     opacity: 0.8;
 }
 
-#Generator {
+.char {
     padding: 10px 20px;
     border-radius: 30px;
-    border-color: aquamarine;
-    border-style: solid;
-    background-color: azure;
-}
-
-#dlbutton {
-    padding: 10px 20px;
-    border-radius: 20px;
     border-color: aquamarine;
     border-style: solid;
     background-color: azure;
